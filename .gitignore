@@ -1,0 +1,146 @@
+# ============================================================
+#  CHATBOT PROJECT — ROOT .gitignore
+#  Covers: Python backend, Node/React frontend, secrets, OS
+# ============================================================
+
+
+# ------------------------------------------------------------
+# SECRETS & ENVIRONMENT
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example          # keep the example template
+*.pem
+*.key
+secrets/
+
+
+# ------------------------------------------------------------
+# PYTHON — Backend
+# ------------------------------------------------------------
+# Virtual environments
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# MyPy / type stubs
+.mypy_cache/
+.dmypy.json
+
+# Ruff / linting caches
+.ruff_cache/
+
+# Local SQLite databases (dev only)
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+
+# Uploaded files & audio cache (runtime data, not source)
+backend/uploads/
+backend/audio_cache/
+
+# Alembic auto-generated (keep alembic.ini & migrations source)
+# backend/alembic/versions/   ← uncomment if you want to ignore migrations
+
+
+# ------------------------------------------------------------
+# NODE / REACT — Frontend
+# ------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+
+# Logs
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+
+# ------------------------------------------------------------
+# OPERATING SYSTEM
+# ------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+
+# ------------------------------------------------------------
+# IDE / EDITOR
+# ------------------------------------------------------------
+# VS Code (keep shared settings if desired)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+
+# Vim / Emacs
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+.project
+.classpath
+
+
+# ------------------------------------------------------------
+# LOGS & TEMP
+# ------------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
+
+
+# ------------------------------------------------------------
+# MISC
+# ------------------------------------------------------------
+*.bak
+*.orig
+*.tmp
+.cache/
